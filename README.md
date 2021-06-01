@@ -1,0 +1,2 @@
+# newmin.github.io
+mysecblog
