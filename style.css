@@ -1,0 +1,208 @@
+@import "reset.css";
+@import "variable.css";
+@import url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css");
+
+:root{
+  /* --nav-hight : 30px; */
+  --content-width : 800px;
+
+  --main-color : #FAE100;
+  --sub-color : burlywood;
+
+  --color-night : #656E8C;
+  --color-sun : #B97667;
+  --yellow : #FAE100;
+  --black : rgba(0,0,0,0.8);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+/* 헤더 */
+.header{
+  background: linear-gradient(var(--color-night) ,var(--color-sun));
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__text{
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 35%;
+  height: 20%;
+  color: white;
+  font-size: 300%;
+  letter-spacing: -3px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(130deg,#4C5D6F ,#BB7667);
+  color: var(--black);
+}
+
+/* 소개 */
+.introduce{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F8F8;
+}
+.introduce__title{
+  font-weight: 600;
+  font-size: 80px;
+  text-align: center;
+  margin: 6% 0;
+}
+.introduce__stories{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 50%;
+}
+.introduce__story{
+  width: 25%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.introduce__story-title{
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 섹션 */
+.section-info{
+  background-color: #F8F8F8;
+  /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.article{
+  width: var(--content-width);
+  border: 3px solid var(--main-color);
+  /* border-radius: 10px; */
+  padding: 10px;
+}
+.article:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out box-shadow;
+}
+
+/* 포트폴리오 */
+.portfolio{
+  display: flex;
+  gap: 10px;
+}
+.portfolio__img{
+  width : 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.portfolio__title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.portfolio__num{
+  font-size: 25px;
+  color : burlywood;
+}
+.portfolio__date{
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.portfolio__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.portfolio__strong{
+  color: tomato;
+  font-weight: 600;
+}
+.portfolio__btns{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.portfolio__btn{
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid var(--sub-color);
+  font-size: 15px;
+  transition: 0.2s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.portfolio__btn:hover{
+  background-color: var(--sub-color);
+  color: white;
+}
+/* 우측바 */
+.aside{
+  position: fixed;
+  right: -12%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.aside__bar{
+  width: 300px;
+  height: 65px;
+  border-radius: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+.aside__bar:hover{
+  transform: translateX(-130px);
+}
+.aside__bar a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+/* .aside__bar:first-child{ background-color: tomato; }
+.aside__bar:nth-child(2){ background-color: orange; }
+.aside__bar:nth-child(3){ background-color: var(--yellow); }
+.aside__bar:nth-child(4){ background-color: teal; }
+.aside__bar:nth-child(5){ background-color: royalblue; }
+.aside__bar:nth-child(6){ background-color: plum; } */
+.aside__bar:nth-child(2n-1){background-color: rgba(0,0,0,0.8); color: white;}
+.aside__bar:nth-child(2n){background-color: rgba(255,255,255,0.8);}
+
+
+.list__title{
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.footer{
+  width: 100vw;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
