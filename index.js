@@ -1,0 +1,1 @@
+document.querySelector('.sectionLink').scrollIntoView();

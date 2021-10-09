@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome, here is my blog</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>Welcome, here is my blog</title>
 </head>
 
 <body>
-  <header class="header" id="home">
-    <div class="header__text">
+  <header class="header home" id="home">
+    <div class="home__text">
       <p>안녕하세요</p>
       <p>S/W개발자 최규민입니다</p>
     </div>
+    <div class=""><a class="home__nextBtn nextBtn sectionLink" href="#introduce"><i class="fas fa-chevron-right"></i></a></div>
   </header>
   <main class="main">
     <section class="introduce" id="introduce">
@@ -54,10 +56,12 @@
             </p>
           </div>
         </div>
+        <a class="introduce__nextBtn nextBtn sectionLink" href="#portfolio"><i class="fas fa-chevron-right"></i></a>
     </section>
     <section class="section-info">
       <article class="article" id="portfolio">
         <h2 class="list__title">포트폴리오</h2>
+        <hr class="article__divider">
         <div class="portfolio">
           <img class="portfolio__img" src="/img/animore.png" alt="animore 웹페이지">
           <div class="portfolio__content">
@@ -68,18 +72,18 @@
                 이를 해결해보고자 저희 팀은 동물시설과 관련된 정보를 통합적으로 조회할 수 있고, 회원들 간의 고객경험을 공유할 수 있는 커뮤니티를 구현하였습니다.
 
               </p>
+              <!-- <p><span class="portfolio__strong">Spring framework5, Spring Boot</span> 활용한 정보제공 커뮤니티 웹</p>
+                <p><span class="portfolio__strong">Oracle 18c XE</span>로 DB 설계하고 <span class="portfolio__strong">Spring JDBC</span>로 연동</p>
+                <p>템플릿 엔진으로 <span class="portfolio__strong">Thymeleaf3</span> 적용</p>
+                <p><span class="portfolio__strong">OpenAPI</span>는 <u>울산광역시동물병원현황</u>,<u>KakaoMap</u></p>
+                <p>RestAPI 구현, 일부 AJAX 적용</p> -->
+              </div>
               <div>
-                <dl>
+                <dl class="portfolio__skill">
                   <dt>프레임워크</dt>
                   <dd>Spring </dd>
                 </dl>
               </div>
-              <p><span class="portfolio__strong">Spring framework5, Spring Boot</span> 활용한 정보제공 커뮤니티 웹</p>
-              <p><span class="portfolio__strong">Oracle 18c XE</span>로 DB 설계하고 <span class="portfolio__strong">Spring JDBC</span>로 연동</p>
-              <p>템플릿 엔진으로 <span class="portfolio__strong">Thymeleaf3</span> 적용</p>
-              <p><span class="portfolio__strong">OpenAPI</span>는 <u>울산광역시동물병원현황</u>,<u>KakaoMap</u></p>
-              <p>RestAPI 구현, 일부 AJAX 적용</p>
-            </div>
             <div class="portfolio__btns">
               <button class="portfolio__btn"><a href="https://github.com/newmin/animore.git">구현소스</a></button>
               <button class="portfolio__btn"><a href="https://youtu.be/MsyzeF6NDVY">시연영상</a></button>
@@ -90,7 +94,8 @@
       </article>
       <article class="article" id="lang">
         <h2 class="list__title">언어</h2>
-        <ul>
+        <hr class="article__divider">
+        <ul class="article__list">
           <li><i class="fab fa-java"></i> Java</li>
           <li>SQL</li>
           <li>HTML5</li>
@@ -100,7 +105,8 @@
       </article>
       <article class="article" id="tools">
         <h2 class="list__title">Tools</h2>
-        <ul>
+        <hr class="article__divider">
+        <ul class="article__list">
           <li>Spring Tools Suite4</li>
           <li>Visual Studio Code</li>
           <li>Oracle</li>
@@ -108,7 +114,8 @@
       </article>
       <article class="article" id="certificate">
         <h2 class="list__title">자격증 취득 목록</h2>
-        <ul>
+        <hr class="article__divider">
+        <ul class="article__list">
           <li>SQLD</li>
           <li>사회조사분석사 2급</li>
           <li>GTQ(그래픽 기술자격) 2급</li>
@@ -117,12 +124,12 @@
       </article>
     </section>
     <aside class="aside">
-      <div class="aside__bar"><a href="#home">Home</a></div>
-      <div class="aside__bar"><a href="#introduce">Introduce</a></div>
-      <div class="aside__bar"><a href="#portfolio">Portfolio</a></div>
-      <div class="aside__bar"><a href="#lang">langage</a></div>
-      <div class="aside__bar"><a href="#tools">Tools</a></div>
-      <div class="aside__bar"><a href="#certificate">Certificate</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#home">Home</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#introduce">Introduce</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#portfolio">Portfolio</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#lang">langage</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#tools">Tools</a></div>
+      <div class="aside__bar"><a class="sectionLink" href="#certificate">Certificate</a></div>
     </aside>
   </main>
   <footer class="footer">
