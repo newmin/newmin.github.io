@@ -129,11 +129,15 @@ body {
 }
 .article {
   width: var(--content-width);
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   /* border-radius: 10px; */
   padding: 20px 40px;
   font-size: 20px;
   box-sizing: border-box;
+}
+.article:hover {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out box-shadow;
 }
 .article__divider {
   background-color: rgba(0, 0, 0, 0.2);
@@ -147,10 +151,6 @@ body {
 .article__list li {
   display: flex;
   align-items: center;
-}
-.article:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  transition: 0.2s ease-in-out box-shadow;
 }
 
 /* 포트폴리오 */
@@ -200,6 +200,28 @@ body {
   background-color: var(--sub-color);
   color: white;
 }
+.portfolio__skill-btn{
+  cursor: pointer;
+}
+.portfolio__skill{
+  display: none;
+}
+/* skill */
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.skill__item{
+  background-color: rgba(119, 111, 132,0.3);
+  padding: 3px 8px;
+  transition: 0.2s;
+}
+.skill__item:hover{
+  background-color: rgb(119, 111, 132);
+  color: white;
+}
+
 /* 우측바 */
 .aside {
   position: fixed;

@@ -1,0 +1,19 @@
+{
+  "name": "newmin",
+  "version": "1.0.0",
+  "description": "\"newmin의 블로그입니다.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newmin/newmin.github.io.git"
+  },
+  "author": "newmin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newmin/newmin.github.io/issues"
+  },
+  "homepage": "https://github.com/newmin/newmin.github.io#readme"
+}
