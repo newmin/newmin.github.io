@@ -1,2 +1,1 @@
-# newmin.github.io
-mysecblog
+# 개발 블로그 및 포트폴리오입니다.
