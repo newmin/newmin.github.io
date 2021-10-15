@@ -6,8 +6,14 @@
   /* --nav-hight : 30px; */
   --content-width: 800px;
 
-  --main-color: #fae100;
-  --sub-color: burlywood;
+  --color1: #656e8c;
+  --color1-l: #939cbc;
+  --color1-d: #39435f;
+  --color1-text: #fff;
+  --color2: #b97667;
+  --color2-l: #eda595;
+  --color2-d: #87493c;
+  --color2-text: #000000;
 
   --color-night: #656e8c;
   --color-sun: #b97667;
@@ -129,13 +135,20 @@ body {
 }
 .article {
   width: var(--content-width);
+  /* border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  font-size: 20px;
+  box-sizing: border-box; */
+}
+.article__inner {
+  width: var(--content-width);
   border: 1px solid rgba(0, 0, 0, 0.2);
   /* border-radius: 10px; */
   padding: 20px 40px;
   font-size: 20px;
   box-sizing: border-box;
 }
-.article:hover {
+.article__inner:hover {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in-out box-shadow;
 }
@@ -191,33 +204,33 @@ body {
 .portfolio__btn {
   background-color: inherit;
   border: none;
-  border-bottom: 2px solid var(--sub-color);
+  border-bottom: 2px solid var(--color2);
   font-size: 18px;
   transition: 0.2s;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .portfolio__btn:hover {
-  background-color: var(--sub-color);
+  background-color: var(--color2);
   color: white;
 }
-.portfolio__skill-btn{
+.portfolio__skill-btn {
   cursor: pointer;
 }
-.portfolio__skill{
+.portfolio__skill {
   display: none;
 }
 /* skill */
-.skill{
+.skill {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
-.skill__item{
-  background-color: rgba(119, 111, 132,0.3);
+.skill__item {
+  background-color: rgba(119, 111, 132, 0.3);
   padding: 3px 8px;
   transition: 0.2s;
 }
-.skill__item:hover{
+.skill__item:hover {
   background-color: rgb(119, 111, 132);
   color: white;
 }
@@ -266,6 +279,7 @@ body {
 .list__title {
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
 }
 
 .footer {
