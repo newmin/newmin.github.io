@@ -1,6 +1,14 @@
 @import "reset.css";
 @import "variable.css";
+/* fontawsome */
 @import url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css");
+/* tailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   /* --nav-hight : 30px; */
