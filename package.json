@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "postcss style.css -o public/style.css"
+    "build-css": "tailwindcss src/style.css -o style.css"
   },
   "repository": {
     "type": "git",
