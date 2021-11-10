@@ -219,6 +219,10 @@ body {
   .certificate__list {
     grid-template-columns: repeat(1, 1.5fr 1fr);
   }
+  .main{
+    background: none;
+    background-color: #f8f8f8;
+  }
 }
 /* 포트폴리오 */
 .portfolio {
