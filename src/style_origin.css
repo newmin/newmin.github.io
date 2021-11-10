@@ -72,7 +72,7 @@ body {
 @media screen and (max-width: 599px) {
   /* 모바일 세로 */
   .home__text {
-    width: 550px;
+    width: 500px;
     font-size: 250%;
   }
 }
@@ -214,7 +214,7 @@ body {
 @media screen and (max-width: 680px) {
   /* 모바일 세로 */
   .section-info {
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
   .certificate__list {
     grid-template-columns: repeat(1, 1.5fr 1fr);
@@ -280,7 +280,7 @@ body {
     flex-direction: column;
   }
   .article__inner {
-    width: 600px;
+    width: 95vw;
     align-items: center;
   }
 }
