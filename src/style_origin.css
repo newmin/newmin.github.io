@@ -71,6 +71,9 @@ body {
 
 @media screen and (max-width: 599px) {
   /* 모바일 세로 */
+  .home__text {
+    width: 550px;
+  }
 }
 
 .nextBtn {
@@ -166,7 +169,7 @@ body {
   padding: 50px;
 }
 .article {
-  width: var(--content-width);
+  /* width: var(--content-width); */
   /* border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 20px 40px;
   font-size: 20px;
@@ -200,6 +203,18 @@ body {
 .certificate__title {
   font-size: 23px;
   margin-bottom: 8px;
+}
+@media screen and (max-width: 1199px) {
+  /* 타블렛 가로 */
+}
+@media screen and (max-width: 899px) {
+  /* 모바일 가로, 타블렛 세로 */
+}
+@media screen and (max-width: 599px) {
+  /* 모바일 세로 */
+  .certificate__list {
+    grid-template-columns: repeat(1, 1.5fr 1fr);
+  }
 }
 /* 포트폴리오 */
 .portfolio {
@@ -255,6 +270,16 @@ body {
 .portfolio__skill {
   display: none;
 }
+@media screen and (max-width: 599px) {
+  /* 모바일 세로 */
+  .portfolio {
+    flex-direction: column;
+  }
+  .article__inner {
+    width: 95vw;
+    align-items: center;
+  }
+}
 /* skill */
 .skill {
   display: flex;
@@ -277,7 +302,18 @@ body {
   grid-template-columns: repeat(1, 1fr 5fr);
   row-gap: 5px;
 }
-
+@media screen and (max-width: 1199px) {
+  /* 타블렛 가로 */
+}
+@media screen and (max-width: 899px) {
+  /* 모바일 가로, 타블렛 세로 */
+}
+@media screen and (max-width: 599px) {
+  /* 모바일 세로 */
+  .education__list {
+    grid-template-columns: repeat(1, 1.2fr 5fr);
+  }
+}
 /* 우측바 */
 .aside {
   position: fixed;
@@ -323,12 +359,11 @@ body {
 
 @media screen and (max-width: 1199px) {
   /* 타블렛 가로 */
-}
-@media screen and (max-width: 899px) {
-  /* 모바일 가로, 타블렛 세로 */
-  .aside__bar {
+  .aside {
     display: none;
   }
+@media screen and (max-width: 899px) {
+  /* 모바일 가로, 타블렛 세로 */
   .nextBtn {
     display: none;
   }
