@@ -365,23 +365,6 @@ body {
   /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
-@media screen and (max-width: 1199px) {
-  /* 타블렛 가로 */
-  .aside {
-    display: none;
-  }
-}
-@media screen and (max-width: 899px) {
-  /* 모바일 가로, 타블렛 세로 */
-  .nextBtn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  /* 모바일 세로 */
-}
-
 .list__title {
   font-size: 30px;
   font-weight: 600;
@@ -404,4 +387,21 @@ body {
 .lang__icon {
   width: 25px;
   height: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* 타블렛 가로 */
+  .aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 899px) {
+  /* 모바일 가로, 타블렛 세로 */
+  .nextBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /* 모바일 세로 */
 }
