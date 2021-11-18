@@ -219,7 +219,7 @@ body {
   .certificate__list {
     grid-template-columns: repeat(1, 1.5fr 1fr);
   }
-  .main{
+  .main {
     background: none;
     background-color: #f8f8f8;
   }
@@ -370,6 +370,7 @@ body {
   .aside {
     display: none;
   }
+}
 @media screen and (max-width: 899px) {
   /* 모바일 가로, 타블렛 세로 */
   .nextBtn {
